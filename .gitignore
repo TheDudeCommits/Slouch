@@ -1,0 +1,11 @@
+.DS_Store
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+
+# Keep only the curated README captures, not transient visual-QA frames.
+Docs/Screenshots/*
+!Docs/Screenshots/observatory-preview.png
+!Docs/Screenshots/flight-preview.png

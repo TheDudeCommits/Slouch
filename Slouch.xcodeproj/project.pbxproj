@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09B4B9243800E74DA85C04BF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A59D8E06C09B7C4CD1E5C2 /* AVFoundation.framework */; };
+		113E1AED354A8751992C6DA8 /* GameSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECCBE3F411BFF64160B2C42 /* GameSceneView.swift */; };
+		298589946BF4309D92A9E907 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C13BCF9AC98FE4E4592B21A /* DesignSystem.swift */; };
+		2C8273DDD1A9D356CE4442C8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F05F04EE4710ABF18C8CB06 /* CoreMotion.framework */; };
+		2C98A8D11715988A88B45877 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4238BA7C9FC9C9F7D313A7C /* GameView.swift */; };
+		308BE7DE0C33356ED1A4C48A /* SoundscapeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE73222FB2159547C6E6336 /* SoundscapeEngine.swift */; };
+		31B2DC0B57695B5B84C67677 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE50CECAC615E5425C563A /* GameModels.swift */; };
+		32A38044DD5F351B4F2F8969 /* PoseProcessingPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C390E90C16E01AA39D032B9 /* PoseProcessingPipeline.swift */; };
+		386BA133E90250F888B3BCBF /* SyntheticPoseInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6199A01CA83FEA17975735 /* SyntheticPoseInput.swift */; };
+		3A658066831A749AB7AF11FA /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD936E07B914E5EBDA2ED22F /* GameKit.framework */; };
+		3ADC30B605F4C1C5563F57EA /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3D2C1F1D2AFA7903B6745 /* HapticService.swift */; };
+		4C78FE540FC34AAF39271E5C /* VisionShoulderEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D11947D4076C5E9AE696E25 /* VisionShoulderEstimator.swift */; };
+		52BAF9BBE63056CA18D7C87D /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76959E58837AFB804638E660 /* AppModelTests.swift */; };
+		53453D45926BB077EB4B35D0 /* LivePoseCaptureDrivers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0ECC622DB33BDF60414C9 /* LivePoseCaptureDrivers.swift */; };
+		5DA24C6F818E2D05F5180E38 /* PoseTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD018178F74C0573E47805B3 /* PoseTrackingService.swift */; };
+		60D08D412844FCB0A9502DAA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC1B43CBFE70DDC23A3597 /* RootView.swift */; };
+		67CE0DF49343D129ACCD490D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F7AE82446597E960F03AB3F /* Assets.xcassets */; };
+		6B308EF80221E1E4DFA784AD /* PersistenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060580A5CC2F207D4B85016 /* PersistenceStore.swift */; };
+		878551F064F1D63559289B9E /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6432A56C9326E28C1459A523 /* ARKit.framework */; };
+		9E267EA959E36DB4D1D974AA /* GameSceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36433027619DB0EC396916 /* GameSceneController.swift */; };
+		B30587A49E6F19C652EB001E /* SlouchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C47DA0349BE12003182BB3 /* SlouchApp.swift */; };
+		C1E659801E7021B16623EC22 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B144BE58DBDCB40637D455DB /* PrivacyInfo.xcprivacy */; };
+		C22F8BF76469152B04B05964 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C7BA0FD131320D5BCD8AC2 /* AppRouter.swift */; };
+		C467C98E4D58173FE3E9E741 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28805EDAA441B6FCF7559F /* AppModel.swift */; };
+		C84FD47A07D4110ED416C45D /* PlaceholderViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008CBE0C645D28015343EC9C /* PlaceholderViews.swift */; };
+		D79865709ABBFB41C65FECCD /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB6381FD18D04EC0018290D /* Vision.framework */; };
+		DBE9C7935A8A96BF698C8DDB /* PoseTrackingTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FC3F8491D2C71035FB3C9 /* PoseTrackingTypes.swift */; };
+		E3974DBBBFC7614F134362D4 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA079B99C9B08BA6178C83D /* SceneKit.framework */; };
+		FFD9DDBF4CCAF6C6D364754B /* GameCenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C663E9593CAE9AEEA7119B82 /* GameCenterService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27B41DBFC1F8AB8DDF0CBEA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CE11A40B17937896ADC1AB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEFF7DB0F31599539A67642C;
+			remoteInfo = Slouch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008CBE0C645D28015343EC9C /* PlaceholderViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViews.swift; sourceTree = "<group>"; };
+		08C7BA0FD131320D5BCD8AC2 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		14C3D2C1F1D2AFA7903B6745 /* HapticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticService.swift; sourceTree = "<group>"; };
+		17F0ECC622DB33BDF60414C9 /* LivePoseCaptureDrivers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePoseCaptureDrivers.swift; sourceTree = "<group>"; };
+		1F36433027619DB0EC396916 /* GameSceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneController.swift; sourceTree = "<group>"; };
+		2EA079B99C9B08BA6178C83D /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		2ECCBE3F411BFF64160B2C42 /* GameSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneView.swift; sourceTree = "<group>"; };
+		3BBE50CECAC615E5425C563A /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		3FAC1B43CBFE70DDC23A3597 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		4C390E90C16E01AA39D032B9 /* PoseProcessingPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseProcessingPipeline.swift; sourceTree = "<group>"; };
+		4D11947D4076C5E9AE696E25 /* VisionShoulderEstimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionShoulderEstimator.swift; sourceTree = "<group>"; };
+		5D2FAB62E0A7D68DFBEBB789 /* Slouch.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Slouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6073CD38848DB56D9159791B /* Slouch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Slouch.entitlements; sourceTree = "<group>"; };
+		62C47DA0349BE12003182BB3 /* SlouchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlouchApp.swift; sourceTree = "<group>"; };
+		6432A56C9326E28C1459A523 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		6F7AE82446597E960F03AB3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76959E58837AFB804638E660 /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
+		9060580A5CC2F207D4B85016 /* PersistenceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceStore.swift; sourceTree = "<group>"; };
+		92A59D8E06C09B7C4CD1E5C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		988FC3F8491D2C71035FB3C9 /* PoseTrackingTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseTrackingTypes.swift; sourceTree = "<group>"; };
+		9C13BCF9AC98FE4E4592B21A /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		9F05F04EE4710ABF18C8CB06 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		9FB6381FD18D04EC0018290D /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		B144BE58DBDCB40637D455DB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		BD936E07B914E5EBDA2ED22F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		C663E9593CAE9AEEA7119B82 /* GameCenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterService.swift; sourceTree = "<group>"; };
+		CC6199A01CA83FEA17975735 /* SyntheticPoseInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntheticPoseInput.swift; sourceTree = "<group>"; };
+		CD671D62621F84CC6607A809 /* SlouchTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SlouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD018178F74C0573E47805B3 /* PoseTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseTrackingService.swift; sourceTree = "<group>"; };
+		DDE73222FB2159547C6E6336 /* SoundscapeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundscapeEngine.swift; sourceTree = "<group>"; };
+		E4238BA7C9FC9C9F7D313A7C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		FC28805EDAA441B6FCF7559F /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF0CC2B2DAAB7ECA50F73FEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3974DBBBFC7614F134362D4 /* SceneKit.framework in Frameworks */,
+				878551F064F1D63559289B9E /* ARKit.framework in Frameworks */,
+				D79865709ABBFB41C65FECCD /* Vision.framework in Frameworks */,
+				09B4B9243800E74DA85C04BF /* AVFoundation.framework in Frameworks */,
+				3A658066831A749AB7AF11FA /* GameKit.framework in Frameworks */,
+				2C8273DDD1A9D356CE4442C8 /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B6A9019B1F6708038CE00C /* SlouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				76959E58837AFB804638E660 /* AppModelTests.swift */,
+			);
+			path = SlouchTests;
+			sourceTree = "<group>";
+		};
+		1E137A15CE901C1D2258E9DF /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				1F36433027619DB0EC396916 /* GameSceneController.swift */,
+				2ECCBE3F411BFF64160B2C42 /* GameSceneView.swift */,
+				E4238BA7C9FC9C9F7D313A7C /* GameView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		2D3E78A430C5E50E1EC1428B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D2FAB62E0A7D68DFBEBB789 /* Slouch.app */,
+				CD671D62621F84CC6607A809 /* SlouchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30596939FDD7DD5F282A794D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BBE50CECAC615E5425C563A /* GameModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		337B95DE892F03744AEECB94 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FC28805EDAA441B6FCF7559F /* AppModel.swift */,
+				08C7BA0FD131320D5BCD8AC2 /* AppRouter.swift */,
+				3FAC1B43CBFE70DDC23A3597 /* RootView.swift */,
+				62C47DA0349BE12003182BB3 /* SlouchApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		40BE8895AFB0F2FFB1D4EE2B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C663E9593CAE9AEEA7119B82 /* GameCenterService.swift */,
+				14C3D2C1F1D2AFA7903B6745 /* HapticService.swift */,
+				9060580A5CC2F207D4B85016 /* PersistenceStore.swift */,
+				DDE73222FB2159547C6E6336 /* SoundscapeEngine.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		45ACE606293992CF6E7D84E1 /* Slouch */ = {
+			isa = PBXGroup;
+			children = (
+				337B95DE892F03744AEECB94 /* App */,
+				A1755735F5E6F34C150CCE5E /* Design */,
+				1E137A15CE901C1D2258E9DF /* Game */,
+				30596939FDD7DD5F282A794D /* Models */,
+				E1FACF7154A56537413713FA /* Resources */,
+				40BE8895AFB0F2FFB1D4EE2B /* Services */,
+				57D0001B8B1B058D93C6E3C5 /* Tracking */,
+				BEAFD976304BD54ADFEBC597 /* Views */,
+			);
+			path = Slouch;
+			sourceTree = "<group>";
+		};
+		488AC3E030FD5F9F2E3AF2CC = {
+			isa = PBXGroup;
+			children = (
+				45ACE606293992CF6E7D84E1 /* Slouch */,
+				13B6A9019B1F6708038CE00C /* SlouchTests */,
+				88878F2193574595F821D090 /* Frameworks */,
+				2D3E78A430C5E50E1EC1428B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57D0001B8B1B058D93C6E3C5 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				17F0ECC622DB33BDF60414C9 /* LivePoseCaptureDrivers.swift */,
+				4C390E90C16E01AA39D032B9 /* PoseProcessingPipeline.swift */,
+				DD018178F74C0573E47805B3 /* PoseTrackingService.swift */,
+				988FC3F8491D2C71035FB3C9 /* PoseTrackingTypes.swift */,
+				CC6199A01CA83FEA17975735 /* SyntheticPoseInput.swift */,
+				4D11947D4076C5E9AE696E25 /* VisionShoulderEstimator.swift */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		88878F2193574595F821D090 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6432A56C9326E28C1459A523 /* ARKit.framework */,
+				92A59D8E06C09B7C4CD1E5C2 /* AVFoundation.framework */,
+				9F05F04EE4710ABF18C8CB06 /* CoreMotion.framework */,
+				BD936E07B914E5EBDA2ED22F /* GameKit.framework */,
+				2EA079B99C9B08BA6178C83D /* SceneKit.framework */,
+				9FB6381FD18D04EC0018290D /* Vision.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1755735F5E6F34C150CCE5E /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				9C13BCF9AC98FE4E4592B21A /* DesignSystem.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		BEAFD976304BD54ADFEBC597 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				008CBE0C645D28015343EC9C /* PlaceholderViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1FACF7154A56537413713FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F7AE82446597E960F03AB3F /* Assets.xcassets */,
+				B144BE58DBDCB40637D455DB /* PrivacyInfo.xcprivacy */,
+				6073CD38848DB56D9159791B /* Slouch.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CA7F204B4A8C9445099A6A2 /* SlouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 579FB23A147E60F1D370DE75 /* Build configuration list for PBXNativeTarget "SlouchTests" */;
+			buildPhases = (
+				A6F2FBF6AFBEBF611D102BFB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				560F5BCD40B811C2D63A157C /* PBXTargetDependency */,
+			);
+			name = SlouchTests;
+			packageProductDependencies = (
+			);
+			productName = SlouchTests;
+			productReference = CD671D62621F84CC6607A809 /* SlouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AEFF7DB0F31599539A67642C /* Slouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89D7B3F5CF4FA5F6B7186948 /* Build configuration list for PBXNativeTarget "Slouch" */;
+			buildPhases = (
+				14B779EA8A2DD01969B78294 /* Sources */,
+				264C4EA0A8A3F208B226EC10 /* Resources */,
+				FF0CC2B2DAAB7ECA50F73FEA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Slouch;
+			packageProductDependencies = (
+			);
+			productName = Slouch;
+			productReference = 5D2FAB62E0A7D68DFBEBB789 /* Slouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CE11A40B17937896ADC1AB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					9CA7F204B4A8C9445099A6A2 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					AEFF7DB0F31599539A67642C = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA814BB2A215B072DE8A822A /* Build configuration list for PBXProject "Slouch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 488AC3E030FD5F9F2E3AF2CC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2D3E78A430C5E50E1EC1428B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEFF7DB0F31599539A67642C /* Slouch */,
+				9CA7F204B4A8C9445099A6A2 /* SlouchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		264C4EA0A8A3F208B226EC10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CE0DF49343D129ACCD490D /* Assets.xcassets in Resources */,
+				C1E659801E7021B16623EC22 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14B779EA8A2DD01969B78294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C467C98E4D58173FE3E9E741 /* AppModel.swift in Sources */,
+				C22F8BF76469152B04B05964 /* AppRouter.swift in Sources */,
+				298589946BF4309D92A9E907 /* DesignSystem.swift in Sources */,
+				FFD9DDBF4CCAF6C6D364754B /* GameCenterService.swift in Sources */,
+				31B2DC0B57695B5B84C67677 /* GameModels.swift in Sources */,
+				9E267EA959E36DB4D1D974AA /* GameSceneController.swift in Sources */,
+				113E1AED354A8751992C6DA8 /* GameSceneView.swift in Sources */,
+				2C98A8D11715988A88B45877 /* GameView.swift in Sources */,
+				3ADC30B605F4C1C5563F57EA /* HapticService.swift in Sources */,
+				53453D45926BB077EB4B35D0 /* LivePoseCaptureDrivers.swift in Sources */,
+				6B308EF80221E1E4DFA784AD /* PersistenceStore.swift in Sources */,
+				C84FD47A07D4110ED416C45D /* PlaceholderViews.swift in Sources */,
+				32A38044DD5F351B4F2F8969 /* PoseProcessingPipeline.swift in Sources */,
+				5DA24C6F818E2D05F5180E38 /* PoseTrackingService.swift in Sources */,
+				DBE9C7935A8A96BF698C8DDB /* PoseTrackingTypes.swift in Sources */,
+				60D08D412844FCB0A9502DAA /* RootView.swift in Sources */,
+				B30587A49E6F19C652EB001E /* SlouchApp.swift in Sources */,
+				308BE7DE0C33356ED1A4C48A /* SoundscapeEngine.swift in Sources */,
+				386BA133E90250F888B3BCBF /* SyntheticPoseInput.swift in Sources */,
+				4C78FE540FC34AAF39271E5C /* VisionShoulderEstimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F2FBF6AFBEBF611D102BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BAF9BBE63056CA18D7C87D /* AppModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		560F5BCD40B811C2D63A157C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEFF7DB0F31599539A67642C /* Slouch */;
+			targetProxy = 27B41DBFC1F8AB8DDF0CBEA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		37257BB9A4765A0628B0569E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		89F59A64102E793512D2BEF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Slouch/Resources/Slouch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Slouch;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Slouch uses the front camera to turn gentle head and neck movements into private, on-device game controls. Camera images are never recorded or uploaded.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIViewControllerBasedStatusBarAppearance = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amirthedude69.slouch;
+				PRODUCT_NAME = Slouch;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A7E5C0005C895B8309BA6FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Slouch/Resources/Slouch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Slouch;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Slouch uses the front camera to turn gentle head and neck movements into private, on-device game controls. Camera images are never recorded or uploaded.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIViewControllerBasedStatusBarAppearance = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amirthedude69.slouch;
+				PRODUCT_NAME = Slouch;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A9704BDD3B059B6CCD891644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amirthedude69.slouch.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Slouch.app/Slouch";
+			};
+			name = Debug;
+		};
+		B335285CD795BCB8C4228216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amirthedude69.slouch.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Slouch.app/Slouch";
+			};
+			name = Release;
+		};
+		D04AB8533980AAF74121651E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		579FB23A147E60F1D370DE75 /* Build configuration list for PBXNativeTarget "SlouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9704BDD3B059B6CCD891644 /* Debug */,
+				B335285CD795BCB8C4228216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		89D7B3F5CF4FA5F6B7186948 /* Build configuration list for PBXNativeTarget "Slouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F59A64102E793512D2BEF5 /* Debug */,
+				A7E5C0005C895B8309BA6FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FA814BB2A215B072DE8A822A /* Build configuration list for PBXProject "Slouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04AB8533980AAF74121651E /* Debug */,
+				37257BB9A4765A0628B0569E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CE11A40B17937896ADC1AB6 /* Project object */;
+}
