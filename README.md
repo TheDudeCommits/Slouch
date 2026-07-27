@@ -30,7 +30,7 @@ The game is built natively with SwiftUI, SceneKit, ARKit, Vision, AVFoundation, 
 1. Clone the repository and open the checked-in project:
 
    ```sh
-   git clone https://github.com/AmirTheDude69/Slouch.git
+   git clone https://github.com/TheDudeCommits/Slouch.git
    cd Slouch
    open Slouch.xcodeproj
    ```
