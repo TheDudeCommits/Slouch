@@ -13,7 +13,7 @@ The project has no external Swift packages. The checked-in `Slouch.xcodeproj` ca
 ## Open and run
 
 ```sh
-git clone https://github.com/AmirTheDude69/Slouch.git
+git clone https://github.com/TheDudeCommits/Slouch.git
 cd Slouch
 open Slouch.xcodeproj
 ```
